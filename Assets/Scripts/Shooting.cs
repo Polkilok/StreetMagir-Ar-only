@@ -8,6 +8,8 @@ public class Shooting : MonoBehaviour
 
 	public GameObject Bullet;
 
+	public GameObject Gun;
+
 	public Button Button;
 
 	void Start()
@@ -18,7 +20,7 @@ public class Shooting : MonoBehaviour
 
 	void TaskOnClick()
 	{
-		var copy = Instantiate(Bullet, transform.position, transform.rotation);
+		var copy = Instantiate(Bullet, Gun.transform.position, Gun.transform.rotation);
 		copy.SetActive(true);
 	}
 }

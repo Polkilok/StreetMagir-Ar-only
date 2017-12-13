@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
 
 	void ApplyDamage(float damage)
 	{
-		Debug.Log(string.Format("{0} damege receive", HealthCount));
+		Debug.Log(string.Format("{0} damage receive", HealthCount));
 		if ((HealthCount -= damage) <= 0f)
 			Destroy(gameObject);
 	}
